@@ -2,11 +2,11 @@
 
 /**
  * The Elf class implements a wrapper for the base Creature class with the following additions
- * Implements a maximum/minimum strength for the creature type [20/5]
- * Implements a maximum/minimum hitpoint total for the creature type [25/5]
+ * Implements a maximum/minimum strength for the creature type [18/5]
+ * Implements a maximum/minimum hitpoint total for the creature type [25/8]
  * 
- * @author Bill Crosbie
- * @version 2025-04 v1.1
+ * @author Alessandro Marucci
+ * @version 04.09.2025 v1.1
  */
 public class Elf extends Creature
 {
