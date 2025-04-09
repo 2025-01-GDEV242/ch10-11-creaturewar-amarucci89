@@ -1,14 +1,14 @@
 
 
 /**
- * The Human class implements a wrapper for the base Creature class with the following additions
+ * The Elf class implements a wrapper for the base Creature class with the following additions
  * Implements a maximum/minimum strength for the creature type [20/5]
  * Implements a maximum/minimum hitpoint total for the creature type [25/5]
  * 
- * @author Alessandro Marucci
- * @version 04.09.2025 v1.1
+ * @author Bill Crosbie
+ * @version 2025-04 v1.1
  */
-public class Human extends Creature
+public class Elf extends Creature
 {
     // instance variables - replace the example below with your own
     private static final int MAX_HUMAN_HP = 25;
@@ -17,15 +17,15 @@ public class Human extends Creature
     private static final int MIN_HUMAN_STR = 5;
 
     /**
-     * Constructor for objects of class Human -
+     * Constructor for objects of class Elf -
      * Note that the calling class does not need to know anything about the 
      * requirements of human minimum and maximum values
      * 
-     * The instantiating class asks for a Human and the human class is responsible for
-     * return a Human object with values in the appropriate range
+     * The instantiating class asks for a Elf and the human class is responsible for
+     * return a Elf object with values in the appropriate range
      * 
      */
-    public Human()
+    public Elf()
     {
         // note how the class uses the static randomizer class to
         // generate the values. This localizes the need to know 
