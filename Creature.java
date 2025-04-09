@@ -63,8 +63,9 @@ public abstract class Creature
      * @return true when current hit point level is less than or equal to zero
      */
     public boolean isKnockedOut() {
-        //TODO: implement a method to report if the creature has been killed
-        return false; //change this
+        if (hp <= 0) {
+        }
+        return true;
     }
     
     
