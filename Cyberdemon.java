@@ -19,7 +19,7 @@ public class Cyberdemon extends Creature
     /**
      * Constructor for objects of class Cyberdemon -
      * Note that the calling class does not need to know anything about the 
-     * requirements of demon minimum and maximum values
+     * requirements of Cyberdemon minimum and maximum values
      * 
      * The instantiating class asks for a Cyberdemon and the demon class is responsible for
      * return a Cyberdemon object with values in the appropriate range
@@ -33,8 +33,8 @@ public class Cyberdemon extends Creature
         // max-min is range of values
         // range + min ensures that the values don't start at one.
         super(
-            Randomizer.nextInt(MAX_DEMON_STR-MIN_DEMON_STR)+MIN_DEMON_STR,
-            Randomizer.nextInt(MAX_DEMON_HP-MIN_DEMON_HP)+MIN_DEMON_HP        
+            Randomizer.nextInt(MAX_CYBERDEMON_STR-MIN_CYBERDEMON_STR)+MIN_CYBERDEMON_STR,
+            Randomizer.nextInt(MAX_CYBERDEMON_HP-MIN_CYBERDEMON_HP)+MIN_CYBERDEMON_HP        
         );
           
     }
