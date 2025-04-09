@@ -50,8 +50,12 @@ public abstract class Creature
      * @return true when current hit point level is greater than zero
      */
     public boolean isAlive() {
-        // TODO: implement a method to report if the creature yet lives
-        return false; //change this
+        if(hp > 0) {
+            return true;
+        }
+        else {
+        return false;
+        }
     }
     
     /**
