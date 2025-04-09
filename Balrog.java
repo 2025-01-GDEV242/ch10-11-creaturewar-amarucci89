@@ -8,7 +8,7 @@
  * @author Alessandro Marucci
  * @version 04.09.2025 v1.1
  */
-public class Balrog extends Creature
+public class Balrog extends Demon
 {
     // instance variables - replace the example below with your own
     private static final int MAX_BALROG_HP = 200;

@@ -8,7 +8,7 @@
  * @author Alessandro Marucci
  * @version 04.09.2025 v1.1
  */
-public class Cyberdemon extends Creature
+public class Cyberdemon extends Demon
 {
     // instance variables - replace the example below with your own
     private static final int MAX_CYBERDEMON_HP = 100;
