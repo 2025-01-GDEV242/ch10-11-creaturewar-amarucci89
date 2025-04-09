@@ -19,9 +19,9 @@ public class Elf extends Creature
     /**
      * Constructor for objects of class Elf -
      * Note that the calling class does not need to know anything about the 
-     * requirements of human minimum and maximum values
+     * requirements of elf minimum and maximum values
      * 
-     * The instantiating class asks for a Elf and the human class is responsible for
+     * The instantiating class asks for a Elf and the elf class is responsible for
      * return a Elf object with values in the appropriate range
      * 
      */
@@ -33,14 +33,14 @@ public class Elf extends Creature
         // max-min is range of values
         // range + min ensures that the values don't start at one.
         super(
-            Randomizer.nextInt(MAX_HUMAN_STR-MIN_HUMAN_STR)+MIN_HUMAN_STR,
-            Randomizer.nextInt(MAX_HUMAN_HP-MIN_HUMAN_HP)+MIN_HUMAN_HP        
+            Randomizer.nextInt(MAX_ELF_STR-MIN_ELF_STR)+MIN_ELF_STR,
+            Randomizer.nextInt(MAX_ELF_HP-MIN_ELF_HP)+MIN_ELF_HP        
         );
           
     }
     
     
-    // attack() - not overridden because Humans generate basic damage
-    // takeDamage(int) - not overridden, because Humans take all damage assigned to them
+    // attack() - not overridden because Elfs generate basic damage
+    // takeDamage(int) - not overridden, because Elfs take all damage assigned to them
 
 }
