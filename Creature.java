@@ -1,5 +1,5 @@
 
-/**
+/** Creature War Lab
  * Abstract class Creature - 
  * The creature is the main class from which all other battling creatures derive.
  * It is the creature's job to maintain current health values in response to 
@@ -7,8 +7,8 @@
  * the creature is alive or knocked out. The creature is also responsible for calculating
  * damage delivered based on the creature's strength (1 to str) 
  * 
- * @author Crosbie
- * @version 2025-04 v1.0
+ * @author Alessandro Marucci
+ * @version 04.09.2025 v1.0
  */
 // we will learn what the abstract keyword does in a later chapter
 public abstract class Creature
