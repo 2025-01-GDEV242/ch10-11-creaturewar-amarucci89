@@ -31,6 +31,7 @@ public abstract class Creature
        this.str = str;
        this.hp = hp;
        max_hp = hp;
+       int damage;
     }
     
     
@@ -40,8 +41,8 @@ public abstract class Creature
      */
     public int attack(){
         Random random = new Random();
-        int playerDamage = random.nextInt(str);
-        return playerDamage;
+        int damage = random.nextInt(str);
+        return damage;
         }
     
     
@@ -64,10 +65,12 @@ public abstract class Creature
      */
     public boolean isKnockedOut() {
         if (hp <= 0) {
-        }
         return true;
+        }
+        else {
+        return false;
+        }
     }
-    
     
     /**
      * takeDamage receives a value for the amount of damage to subtract from 
@@ -75,7 +78,7 @@ public abstract class Creature
      * @param damage value to remove from hit point count
      */
     public void takeDamage(int damage) {
-        // TODO: implement this
+        hp = hp - damage;
     }
     
     /**
