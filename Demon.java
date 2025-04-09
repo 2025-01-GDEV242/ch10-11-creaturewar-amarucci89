@@ -19,9 +19,9 @@ public class Demon extends Creature
     /**
      * Constructor for objects of class Demon -
      * Note that the calling class does not need to know anything about the 
-     * requirements of human minimum and maximum values
+     * requirements of demon minimum and maximum values
      * 
-     * The instantiating class asks for a Demon and the human class is responsible for
+     * The instantiating class asks for a Demon and the demon class is responsible for
      * return a Demon object with values in the appropriate range
      * 
      */
@@ -33,8 +33,8 @@ public class Demon extends Creature
         // max-min is range of values
         // range + min ensures that the values don't start at one.
         super(
-            Randomizer.nextInt(MAX_HUMAN_STR-MIN_HUMAN_STR)+MIN_HUMAN_STR,
-            Randomizer.nextInt(MAX_HUMAN_HP-MIN_HUMAN_HP)+MIN_HUMAN_HP        
+            Randomizer.nextInt(MAX_DEMON_STR-MIN_DEMON_STR)+MIN_DEMON_STR,
+            Randomizer.nextInt(MAX_DEMON_HP-MIN_DEMON_HP)+MIN_DEMON_HP        
         );
           
     }
