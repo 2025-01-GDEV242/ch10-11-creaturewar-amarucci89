@@ -2,8 +2,8 @@
 
 /**
  * The Balrog class implements a wrapper for the base Creature class with the following additions
- * Implements a maximum/minimum strength for the creature type [40/20]
- * Implements a maximum/minimum hitpoint total for the creature type [100/25]
+ * Implements a maximum/minimum strength for the creature type [100/50]
+ * Implements a maximum/minimum hitpoint total for the creature type [200/80]
  * 
  * @author Alessandro Marucci
  * @version 04.09.2025 v1.1
@@ -11,10 +11,10 @@
 public class Balrog extends Creature
 {
     // instance variables - replace the example below with your own
-    private static final int MAX_DEMON_HP = 100;
-    private static final int MIN_DEMON_HP = 25;
-    private static final int MAX_DEMON_STR = 40;
-    private static final int MIN_DEMON_STR = 20;
+    private static final int MAX_BALROG_HP = 200;
+    private static final int MIN_BALROG_HP = 80;
+    private static final int MAX_BALROG_STR = 100;
+    private static final int MIN_BALROG_STR = 50;
 
     /**
      * Constructor for objects of class Balrog -
