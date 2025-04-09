@@ -73,4 +73,12 @@ public abstract class Creature
         // TODO: implement this
     }
     
+    /**
+     * Return number of hitPoints in private field.
+     * @return The current number of HP.
+     */
+    public int getHealth()
+    {
+        return hp;
+    }
 }
