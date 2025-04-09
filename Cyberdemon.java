@@ -11,10 +11,10 @@
 public class Cyberdemon extends Creature
 {
     // instance variables - replace the example below with your own
-    private static final int MAX_DEMON_HP = 100;
-    private static final int MIN_DEMON_HP = 25;
-    private static final int MAX_DEMON_STR = 40;
-    private static final int MIN_DEMON_STR = 20;
+    private static final int MAX_CYBERDEMON_HP = 100;
+    private static final int MIN_CYBERDEMON_HP = 25;
+    private static final int MAX_CYBERDEMON_STR = 40;
+    private static final int MIN_CYBERDEMON_STR = 20;
 
     /**
      * Constructor for objects of class Cyberdemon -
