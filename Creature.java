@@ -17,7 +17,6 @@ public abstract class Creature
     private int str;        // The strength of this creature
     private int max_hp;     // The maximum hit points the creature can have (used if healing enabled)
     private int hp;         // the current numberof hit points the creature has
-    
   
     
     /**
@@ -40,9 +39,10 @@ public abstract class Creature
      * @return a value between 1 and str to be used to cause damage to another creature
      */
     public int attack(){
-        // TODO: implement a damage method
-        return 0;
-    }
+        Random random = new Random();
+        int playerDamage = random.nextInt(str);
+        return playerDamage;
+        }
     
     
     /**
