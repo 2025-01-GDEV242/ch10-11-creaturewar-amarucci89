@@ -1,3 +1,4 @@
+import java.util.Random;
 
 /** Creature War Lab
  * Abstract class Creature - 
