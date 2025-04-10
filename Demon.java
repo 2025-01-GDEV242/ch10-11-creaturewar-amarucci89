@@ -1,3 +1,4 @@
+import java.util.Random;
 
 
 /**
@@ -15,6 +16,7 @@ public class Demon extends Creature
     private static final int MIN_DEMON_HP = 25;
     private static final int MAX_DEMON_STR = 40;
     private static final int MIN_DEMON_STR = 20;
+    private int magicDamage;
 
     /**
      * Constructor for objects of class Demon -
@@ -39,6 +41,19 @@ public class Demon extends Creature
           
     }
     
+    /**
+     * Determines if magic damage will be inflicted or not.
+     * @return a value between 1 and str to be used to cause damage to another creature
+     */
+    public int magicDamage(){
+        Random random = new Random();
+        //int str = elfStr();
+        magicDamage = str + 50;
+        double probability = 0.05;
+        
+        int damage = random.nextInt(str * 2);
+        return damage;
+        }
     
     // attack() - not overridden because Humans generate basic damage
     // takeDamage(int) - not overridden, because Humans take all damage assigned to them
