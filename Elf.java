@@ -1,3 +1,4 @@
+import java.util.Random;
 
 
 /**
@@ -39,9 +40,30 @@ public class Elf extends Creature
         );
           
     }
+        
+    public void accessStr()
+    {
+        Creature obj = new Elf();
+        obj.setStr(10);
+        int value = obj.getStr();
+    }
+    
+    /**
+     * Determines how much magic damage to inflict.
+     * @return a value between 1 and str to be used to cause damage to another creature
+     */
+    public int magicDamage(){
+        Random random = new Random();
+        //int str = elfStr();
+        magicDamage = str * 2;
+        double probability = 0.1;
+        
+        int damage = random.nextInt(str * 2);
+        return damage;
+        }
     
     
-    // attack() - not overridden because Elfs generate basic damage
+    // attack() - override because Elfs can potentially generate magic damage
     // takeDamage(int) - not overridden, because Elfs take all damage assigned to them
 
 }

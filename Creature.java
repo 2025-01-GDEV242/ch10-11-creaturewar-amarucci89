@@ -34,6 +34,15 @@ public abstract class Creature
        int damage;
     }
     
+    public int getStr()
+    {
+        return str;
+    }
+    
+    public void setStr(int str)
+    {
+        this.str = str;
+    }
     
     /**
      * Allows a creature to determine how much damage it is causing in this round of battle
